@@ -1,0 +1,136 @@
+/* Taken from the getting started guide at: https://leafletjs.com/examples/quick-start/ */
+
+/* Import Leaflet CSS */
+@import "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css";
+
+/* Global Styles */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Leaflet Map Container */
+.leaflet-container {
+  width: 50vw;
+  height: 90vh;
+  margin-bottom: 10px;
+}
+
+/* Root Container */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-title h1 {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.header-title p {
+  font-size: 1.2rem;
+  color: #1d1a1a;
+  margin: 0;
+}
+
+/* Select Styles */
+.selects > select {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Popup Styles */
+.popup > h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.popup > h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.popup > h5 {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Top Crimes Styles */
+.top-crimes > h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.popup-content {
+  margin: 5px;
+}
+
+.top-crimes > p {
+  margin-bottom: 7px;
+  margin-top: 7px;
+  font-size: 0.75rem;
+}
+
+/* Medium devices (tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+  .leaflet-container {
+    width: 80vw;
+    height: 90vh;
+  }
+  .header h1 {
+    font-size: 1.2rem;
+  }
+  /* Adjust other styles as needed */
+}
+
+/* Small devices (large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+  .header h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .leaflet-container {
+    width: 90vw;
+    height: 85vh;
+  }
+  /* Adjust other styles as needed */
+}
+
+/* Extra small devices (phones, 400px and up) */
+@media only screen and (max-width: 400px) {
+  .leaflet-container {
+    width: 100vw;
+    height: 80vh;
+  }
+  .leaflet-popup-content-wrapper {
+    max-width: 200px;
+  }
+}
