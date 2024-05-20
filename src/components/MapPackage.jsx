@@ -36,7 +36,7 @@ function MapPackage() {
 
         const json = await resp.json();
         setDataCrimes(json);
-        setIsError(false);
+        setIsError("");
       } catch (e) {
         console.error("Failed to fetch crime data:", e);
         setIsError(`Failed to fetch crime data: ${e.message}`);
