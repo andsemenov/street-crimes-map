@@ -1,8 +1,13 @@
-# React + Vite +Eslint Template
+# Street-level crimes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crimes at street-level; either within a 1 mile radius of a single point, or within a custom area.
 
-Currently, two official plugins are available:
+The street-level crimes returned in the API are only an approximation of where the actual crimes occurred, they are not the exact locations. See the about page for more information about location anonymisation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you're allowing users to search for locations in Scotland, please make it clear that, since only the British Transport Police provide data for Scotland, crime levels may appear much lower than they really are.
+https://data.police.uk/docs/method/crime-street/
+
+## Installation
+
+npm install
+npm run dev
